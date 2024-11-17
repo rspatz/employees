@@ -14,6 +14,11 @@ class App extends Component {
     };
     console.log('constructor');
   }
+
+  componentDidMount() {
+    console.log('componentDidMount');
+    fetch ('https://jsonplaceholder.typicode.com/users')
+  }
 }
 
 function App() {
